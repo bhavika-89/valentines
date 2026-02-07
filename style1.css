@@ -84,35 +84,24 @@ body {
   z-index: 1;
 }
 
-.hearts {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 20;
-}
-
 .heart {
-  position: absolute;
-  bottom: -10vh;
-  font-size: 20px;
-  animation: floatUp linear infinite;
-  opacity: 0.8;
-}
+      position: absolute;
+      bottom: -20px;
+      animation: floatUp linear forwards;
+      pointer-events: none;
+      filter: blur(0.3px);
+    }
 
-@keyframes floatUp {
-  0% {
-    transform: translateY(0) scale(0.8);
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-110vh) scale(1.4);
-    opacity: 0;
-  }
-}
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120vh) scale(1.8);
+        opacity: 0;
+      }
+    }
 
 
 .flowers {
