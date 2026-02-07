@@ -62,17 +62,20 @@ body {
 }
 
 .photo-wrapper {
-  position: relative;
-  margin-top: 18vh;   /* ⬇️ pushes photo lower */
+  position: absolute;
+  top: 22vh;        /* photo vertical position */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
 }
 
 .photo-wrapper img {
-  height: 55vh;       /* ⬆️ photo size */
-  max-height: 520px;
-  border-radius: 24px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+  height: 58vh;
+  max-height: 560px;
+  border-radius: 26px;
+  box-shadow: 0 30px 90px rgba(0,0,0,0.3);
 }
+
 
 
 .night {
@@ -86,13 +89,17 @@ body {
   filter: blur(0.1vmin);
 }
 
+/* 🔒 HARD OVERRIDE FLOWER POSITION */
 .flowers {
-  position: relative;
-  margin-top: -6vh;   /* ⬆️ overlap slightly with photo bottom */
-  transform: scale(0.45); /* 🌸 smaller flowers */
-  z-index: 5;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 4vh !important;   /* ⬇️ pushes flowers down */
+  transform: translateX(-50%) scale(0.35) !important; /* smaller + centered */
+  transform-origin: bottom center !important;
+  z-index: 5 !important;
   pointer-events: none;
 }
+
 
 
 .flower,
