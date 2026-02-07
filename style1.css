@@ -15,12 +15,19 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* 🚫 no scrolling */
+  overflow: hidden;
 
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background: linear-gradient(
+    -45deg,
+    #ff9a9e,
+    #fad0c4,
+    #fbc2eb,
+    #a18cd1
+  );
   background-size: 400% 400%;
   animation: bgMove 12s ease infinite;
 }
+
 
 .page-wrapper {
   position: relative;
@@ -89,17 +96,17 @@ body {
   filter: blur(0.1vmin);
 }
 
-/* 🔒 HARD OVERRIDE FLOWER POSITION */
-/* 🔒 HARD OVERRIDE FLOWER POSITION */
 .flowers {
   position: absolute !important;
   left: 50% !important;
-  bottom: 4vh !important;   /* ⬇️ pushes flowers down */
-  transform: translateX(-50%) scale(0.35) !important; /* smaller + centered */
+  bottom: 3vh !important;
+  transform: translateX(-50%) scale(0.28) !important;
   transform-origin: bottom center !important;
-  z-index: 5 !important;
+
+  z-index: 30 !important;   /* ⬅️ THIS LINE CHANGED */
   pointer-events: none;
 }
+
 
 
 
