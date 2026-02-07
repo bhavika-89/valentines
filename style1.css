@@ -47,7 +47,7 @@ body {
 
 .surprise-text {
   position: absolute;
-  top: 14vh;          /* ⬇️ move text lower */
+  top: 7vh;          /* ⬇️ move text lower */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -97,15 +97,16 @@ body {
 }
 
 .flowers {
-  position: absolute !important;
-  left: 50% !important;
-  bottom: 3vh !important;
-  transform: translateX(-50%) scale(0.28) !important;
-  transform-origin: bottom center !important;
+  position: absolute;
+  left: 50%;
+  bottom: 2vh;
+  transform: translateX(-50%) scale(0.28);
+  transform-origin: bottom center;
 
-  z-index: 30 !important;   /* ⬅️ THIS LINE CHANGED */
+  z-index: 50;   /* 👈 HIGHER than photo */
   pointer-events: none;
 }
+
 
 
 
