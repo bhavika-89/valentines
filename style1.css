@@ -1094,12 +1094,10 @@ body {
 
 /* 🔻 FORCE ALL FLOWERS TO BE TINY */
 .flowers * {
-  transform: scale(0.35) !important;
+  transform: scale(0.10) !important;
   transform-origin: bottom center !important;
 }
 
-.flower__grass,
-.growing-grass,
-.long-g {
+ .long-g{
   display: none !important;
 }
