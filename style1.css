@@ -50,23 +50,30 @@ body {
   pointer-events: none;
 }
 
+.photo-flower-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: none;
+}
 
 .photo-wrapper {
   position: relative;
-  height: 55svh;      /* controls image size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
+  margin-top: 18vh;   /* ⬇️ pushes photo lower */
+  z-index: 10;
 }
 
 .photo-wrapper img {
-  height: 100%;
-  max-width: 90vw;
-  object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  height: 55vh;       /* ⬆️ photo size */
+  max-height: 520px;
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
 }
+
 
 .night {
   position: fixed;
@@ -80,13 +87,13 @@ body {
 }
 
 .flowers {
-  position: absolute;
-  bottom: -6vh;      /* push flowers DOWN */
-  left: 50%;
-  transform: translateX(-50%) scale(0.4); /* smaller size */
+  position: relative;
+  margin-top: -6vh;   /* ⬆️ overlap slightly with photo bottom */
+  transform: scale(0.45); /* 🌸 smaller flowers */
+  z-index: 5;
   pointer-events: none;
-  z-index: 3;
 }
+
 
 .flower,
 .flower__leafs,
