@@ -10,14 +10,25 @@
   --dark-color: #ffffff;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow: hidden;   /* 🚫 no scrolling */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 🚫 no scrolling */
+
   background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
   background-size: 400% 400%;
   animation: bgMove 12s ease infinite;
+}
+
+.page-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100svh; /* better than vh */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -87,9 +98,6 @@ body {
 .flower__g-fr {
   z-index: 10 !important;
 }
-
-
-
 
 @media (max-height: 700px) {
   .photo-wrapper {
