@@ -52,21 +52,20 @@ html, body {
 }
 
 .photo-wrapper {
-  position: absolute;
-  top: 18%;              /* move photo slightly down */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 280px;          /* adjust if needed */
-  height: 65vh;          /* THIS makes it tall till bottom */
+  position: relative;
+  height: 55svh;      /* controls image size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
 }
 
 .photo-wrapper img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;     /* fills without distortion */
-  border-radius: 24px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+  max-width: 90vw;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .night {
@@ -82,13 +81,13 @@ html, body {
 
 .flowers {
   position: absolute;
-  top: calc(18% + 79vh);   /* ⬇️ move flowers further down */
+  bottom: -6vh;      /* push flowers DOWN */
   left: 50%;
-  transform: translateX(-50%) scale(0.35); /* 🌸 smaller flowers */
-  transform-origin: top center;
-  z-index: 10;
+  transform: translateX(-50%) scale(0.4); /* smaller size */
   pointer-events: none;
+  z-index: 3;
 }
+
 
 
 .flower,
