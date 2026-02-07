@@ -24,8 +24,7 @@ onload = () => {
 });
 
   };
-
- function createHeart() {
+function createHeart() {
       const heart = document.createElement("div");
       heart.className = "heart";
       heart.innerHTML = Math.random() > 0.5 ? "❤️" : "💗";
@@ -37,6 +36,5 @@ onload = () => {
       document.body.appendChild(heart);
       setTimeout(() => heart.remove(), 8000);
     }
-
     setInterval(createHeart, 380);
   
