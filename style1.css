@@ -76,8 +76,8 @@ body {
 
 
 .photo-wrapper img {
-  height: 58vh;
-  max-height: 560px;
+  height: 70vh;
+  max-height: 600px;
   border-radius: 26px;
   box-shadow: 0 30px 90px rgba(0,0,0,0.3);
   position: relative;
