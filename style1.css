@@ -86,18 +86,14 @@ body {
 
 .flowers {
   position: absolute;
-  bottom: -12vh;                 /* ⬇️ push to bottom */
+  bottom: -16vh;                     /* push further down */
   left: 50%;
-  transform: translateX(-50%) scale(0.5); /* 🌱 much smaller */
+  transform: translateX(-50%) scale(0.18); /* 🌱 VERY small */
   transform-origin: bottom center;
 
   z-index: 5;
   pointer-events: none;
 }
-
-
-
-
 
 .night {
   position: fixed;
