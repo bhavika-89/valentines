@@ -70,8 +70,8 @@ body {
   position: absolute;
   top: 22vh;
   left: 50%;
-  margin-left: -140px; /* half of image width */
-  z-index: 10;
+  transform: translateX(-50%);
+  z-index: 10;   /* always above flowers */
 }
 
 
@@ -86,14 +86,15 @@ body {
 
 .flowers {
   position: absolute;
-  bottom: -16vh;                     /* push further down */
   left: 50%;
-  transform: translateX(-50%) scale(0.18); /* 🌱 VERY small */
+  bottom: -22vh;                     /* 🔽 force to bottom */
+  transform: translateX(-50%) scale(0.1); /* 🌱 TINY */
   transform-origin: bottom center;
 
-  z-index: 5;
+  z-index: 3;                        /* below photo visually */
   pointer-events: none;
 }
+
 
 .night {
   position: fixed;
