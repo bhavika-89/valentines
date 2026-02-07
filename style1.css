@@ -85,15 +85,14 @@ body {
 }
 
 .flowers {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  bottom: -22vh;                     /* 🔽 force to bottom */
-  transform: translateX(-50%) scale(0.1); /* 🌱 TINY */
-  transform-origin: bottom center;
-
-  z-index: 3;                        /* below photo visually */
+  bottom: -35vh;          /* ⬇️ hard push down */
+  transform: translateX(-50%);
+  z-index: 3;
   pointer-events: none;
 }
+
 
 
 .night {
@@ -1092,3 +1091,15 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }/*# sourceMappingURL=style.css.map */
+
+/* 🔻 FORCE ALL FLOWERS TO BE TINY */
+.flowers * {
+  transform: scale(0.35) !important;
+  transform-origin: bottom center !important;
+}
+
+.flower__grass,
+.growing-grass,
+.long-g {
+  display: none !important;
+}
