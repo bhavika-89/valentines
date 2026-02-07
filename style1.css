@@ -47,15 +47,12 @@ body {
 
 .surprise-text {
   position: absolute;
-  top: 7vh;          /* ⬇️ move text lower */
-  left: 50%;
-  transform: translateX(-50%);
+  top: 4vh;     /* slightly higher */
+  width: 100%;
   text-align: center;
-  color: white;
-  font-size: 2rem;
-  z-index: 50;
-  pointer-events: none;
+  z-index: 100;
 }
+
 
 .photo-flower-wrapper {
   position: relative;
@@ -98,14 +95,18 @@ body {
 
 .flowers {
   position: absolute;
+
   left: 50%;
-  bottom: 2vh;
-  transform: translateX(-50%) scale(0.28);
+  top: calc(22vh + 58vh - 6vh);  
+  /* 👆 photo top + photo height − overlap */
+
+  transform: translateX(-50%) scale(0.25);
   transform-origin: bottom center;
 
-  z-index: 50;   /* 👈 HIGHER than photo */
+  z-index: 30;        /* above photo */
   pointer-events: none;
 }
+
 
 
 
