@@ -23,6 +23,8 @@ onload = () => {
   }
 });
 
+  };
+
 const heartsContainer = document.querySelector(".hearts");
 
 function createHeart() {
@@ -42,7 +44,4 @@ function createHeart() {
 }
 
 setInterval(createHeart, 500);
-
-
-  };
   
